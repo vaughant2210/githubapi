@@ -16,15 +16,57 @@
     <div class="header">
       <span class="mega-octicon octicon-mark-github"></span>
     </div>
-    <div class="nav"></div>
-    <div class="main"></div>
-    <div class="sidebar"></div>
-    <div class="footer"></div>
+  <div class="mainContainer"></div>
+
+  <div class="main">
+
+    <ul class="repositories">
+    </ul>
+
   </div>
+  <div class="footer"></div>
+
+
+  </div>
+
+
+
+
 
 
   <script src="styles/bower_components/jquery/dist/jquery.js"></script>
   <script src="styles/bower_components/underscore/underscore.js"></script>
+  <script src="styles/bower_components/moment/moment.js"></script>
+  <script type="text/template" data-template-name="sidebar">
+
+  <div class="nav"></div>
+  <div class="sidebar"><img class="image" src=" <% image %> "/>
+
+    <div>
+      <h3> <% name %> </h3>
+    </div>
+    <div>  <% username %>  </div>
+    <div>  <% joined %> </div>
+    <div></div>
+  </div>
+
+  </script>
+
+
+  <script type="text/template" data-template-name="repo">
+    <li>
+      <%= name %>
+      <%= pushed_at %>
+      <%= language %>
+      <%= stargazers_count %>
+      <%= forks_count %>
+      <%= stargazers_url %>
+      <%= forks_url %>
+    </li></br>
+  </script>
+
+
+  <!-- <a href="<%= html_url %>"> -->
 
   <script type="text/javascript" src="styles/token.js"> </script>
   <script type="text/javascript" src="styles/main.js"> </script>

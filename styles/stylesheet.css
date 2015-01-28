@@ -1,0 +1,34 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+.header {
+  background-color: whitesmoke;
+  border-bottom: 1px solid #e5e5e5;
+  height: 50px;
+  width: 1025px; }
+
+.main {
+  background-color: #9c9;
+  float: right;
+  height: 500px;
+  width: 700px; }
+
+.sidebar {
+  background-color: #c9c;
+  float: left;
+  height: 500px;
+  width: 300px; }
+
+/*# sourceMappingURL=stylesheet.css.map */

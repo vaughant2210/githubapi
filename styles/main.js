@@ -42,18 +42,19 @@ var $repositoriesUl = $('.repositories');
 $.ajax(githubUrl + "/repos").done(function(repos){
     console.log(repos);
   _.each(repos, function(repo) {
-    var a={
-      name: repo.name,
-      pushed_at: moment(repo.pushed_at).fromNow(),
-      language: repo.language,
-      stargazers_count: repo.stargazers_count,
-      forks_count: repo.forks_count,
-      stargazers_url: repo.stargazers_url,
-      forks_url: repo.forks_url
-    };
+    // var a={
+    //   name: repo.name,
+    //   html: repo.html_url,
+    //   pushed_at: moment(repo.pushed_at).fromNow(),
+    //   language: repo.language,
+    //   stargazers_count: repo.stargazers_count,
+    //   forks_count: repo.forks_count,
+    //   stargazers_url: repo.stargazers_url,
+    //   forks_url: repo.forks_url
+    // };
 
 
-    $repositoriesUl.append(repoTemplate(a));
+    $repositoriesUl.append(repoTemplate(repo));
   });
 });
 

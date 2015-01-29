@@ -11,7 +11,12 @@ $visual-grid: false;
 
 
 
+.color{
 
+  color: rgb(54, 128, 199);
+  font-size: 18px;
+  font-family: arial;
+}
 
 
 
@@ -33,7 +38,31 @@ $visual-grid: false;
   height: 500px;
   width: 700px;
 
+
 }
+
+
+.repositories{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.leftside{
+  display: inline;
+  float: left;
+
+}
+
+.rightside{
+  display: inline;
+  float: right;
+
+}
+
+
 
 .sidebar {
 

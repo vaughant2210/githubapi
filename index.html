@@ -15,6 +15,15 @@
   <div class="wrap">
     <div class="header">
       <span class="mega-octicon octicon-mark-github"></span>
+      <input type="search" value="" placeholder="Search GitHub" class="search-input" />
+
+
+
+
+
+
+
+
     </div>
   <div class="mainContainer"></div>
 
@@ -46,23 +55,47 @@
       <h3> <% name %> </h3>
     </div>
     <div>  <% username %>  </div>
-    <div>  <% joined %> </div>
-    <div></div>
+    <span class="user-login-name">
+      <%=login %>
+    </span>
+
   </div>
+
 
   </script>
 
 
   <script type="text/template" data-template-name="repo">
     <li>
-      <%= name %>
-      <%= pushed_at %>
-      <%= language %>
-      <%= stargazers_count %>
-      <%= forks_count %>
-      <%= stargazers_url %>
-      <%= forks_url %>
-    </li></br>
+
+      <div><a class="color" href="<%= html_url %>"> <%= name %></a></div>
+
+      <div><%= pushed_at %></div>
+
+      <div>
+
+      <div class="rightside">
+
+
+          <span class="language-etc">
+            <span class="repo-tiny-info"><%=language %></span>
+
+            <a href="<%=html_url%>/stargazers" class="tiny-links">
+              <span class="octicon octicon-star">
+                <span class="repo-tiny-info"><%=stargazers_count %></span>
+              </a>
+
+              <a href="<%= html_url%>/network" class="tiny-links">
+                <span class="octicon octicon-git-branch"></span>
+                <span class="repo-tiny-info"><%=forks_count %><span>
+                </a>
+              </span>
+
+
+      </div>
+
+  </li></br>
+
   </script>
 
 

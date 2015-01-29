@@ -13,6 +13,11 @@ html {
 *::after {
   box-sizing: border-box; }
 
+.color {
+  color: #3680c7;
+  font-size: 18px;
+  font-family: arial; }
+
 .header {
   background-color: whitesmoke;
   border-bottom: 1px solid #e5e5e5;
@@ -24,6 +29,19 @@ html {
   float: right;
   height: 500px;
   width: 700px; }
+
+.repositories {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.leftside {
+  display: inline;
+  float: left; }
+
+.rightside {
+  display: inline;
+  float: right; }
 
 .sidebar {
   /*   background-color: #c9c; */
